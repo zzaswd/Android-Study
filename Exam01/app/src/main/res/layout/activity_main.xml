@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize = "20sp"
+        android:textColor = "#673AB7"
+        android:text="이제부터 앱을 만든다."
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="아.. 드디어."
+        />
+
+<!--    여기서부터 아이디 입력창과 버튼 생성. 그리고 위젯당 각각의 고유 id 부여-->
+    <EditText
+        android:id = "@+id/et_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint = "아이디를 입력하세요"
+        />
+
+    <Button
+        android:id = "@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼" />
+
+<!--        Layer안에 새로운 layer를 만듬. 이거하고 subactivity 생성-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id = "@+id/et_test"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id = "@+id/btn_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "이동"/>
+
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
